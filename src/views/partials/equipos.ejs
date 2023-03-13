@@ -1,0 +1,19 @@
+<div class="row">
+      <% equipos.forEach(function(equipo) { %>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark">
+            <div class="card-header text-success d-flex justify-content-between align-items-center">
+              <h4><%= equipo.escuderia %></h4> 
+              <span>🏎</span>
+            </div>
+            <!-- <img class="card-img-top" src="<%= equipo.image %>"> -->
+            <div class="card-body text-light">
+             <h6> Piloto 1: <span><%= equipo.piloto1 %></span></h6> 
+            </div>
+            <div class="card-body text-light">
+              <h6> Piloto 2: <span><%= equipo.piloto2 %></span></h6> 
+            </div>
+          </div>
+        </div>
+        <%})%>
+  </div>

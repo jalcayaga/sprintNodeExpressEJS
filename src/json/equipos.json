@@ -1,0 +1,62 @@
+[
+  {
+    "idEscuderia": 1,
+    "escuderia": "Alfa Romeo",
+    "piloto1": "Valtteri Bottas",
+    "piloto2": "Guanyu Zhou"
+  },
+  {
+    "idEscuderia": 2,
+    "escuderia": "Alpine",
+    "piloto1": "Esteban Ocon",
+    "piloto2": "Pierre Gasly"
+  },
+  {
+    "idEscuderia": 3,
+    "escuderia": "Alpha Tauri",
+    "piloto1": "Nyck de Vries",
+    "piloto2": "Yuki Tsunoda"
+  },
+  {
+    "idEscuderia": 4,
+    "escuderia": "Aston Martin",
+    "piloto1": "Lance Stroll",
+    "piloto2": "Fernando Alonso"
+  },
+  {
+    "idEscuderia": 5,
+    "escuderia": "Ferrari",
+    "piloto1": "Charles Leclerc",
+    "piloto2": "Carlos Sainz"
+  },
+  {
+    "idEscuderia": 6,
+    "escuderia": "Haas",
+    "piloto1": "Kevin Magnussen",
+    "piloto2": "Nico Hulkenberg"
+  },
+  {
+    "idEscuderia": 7,
+    "escuderia": "McLaren",
+    "piloto1": "Lando Norris",
+    "piloto2": "Oscar Piastri"
+  },
+  {
+    "idEscuderia": 8,
+    "escuderia": "Mercedes",
+    "piloto1": "Lewis Hamilton",
+    "piloto2": "George Russell"
+  },
+  {
+    "idEscuderia": 9,
+    "escuderia": "Red Bull",
+    "piloto1": "Max Verstappen",
+    "piloto2": "Checo Pérez"
+  },
+  {
+    "idEscuderia": 10,
+    "escuderia": "Williams",
+    "piloto1": "Alex Albon",
+    "piloto2": "Logan Sargeant"
+  }
+]

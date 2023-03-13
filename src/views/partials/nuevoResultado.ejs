@@ -1,0 +1,102 @@
+<div class="col-3">
+  <form
+    method="POST"
+    target="/nuevo-resultado"
+    class="card bg-dark text-light card-body"
+  >
+    <div class="mb-3">
+      <label for="escuderia">Escudería:</label>
+      <select
+        name="escuderia"
+        id="escuderia"
+        class="form-control"
+        placeholder="Escuderia"
+        autofocus
+        required
+      >
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.idEscuderia %>">
+          <%= equipo.escuderia %>
+        </option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="piloto2">Piloto 1:</label>
+      <select
+        name="piloto1"
+        id="piloto1"
+        class="form-control"
+        placeholder="Nombre Piloto 1"
+        autofocus
+        required
+      >
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.piloto2 %>"><%= equipo.piloto2 %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="piloto2">Piloto 2:</label>
+      <select
+        name="piloto2"
+        id="piloto2"
+        class="form-control"
+        placeholder="Nombre Piloto 2"
+        autofocus
+        required
+      >
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.piloto2 %>"><%= equipo.piloto2 %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="circuito">circuito:</label>
+      <select
+        name="circuito"
+        id="circuito"
+        class="form-control"
+        placeholder="circuito"
+        autofocus
+        required
+      >
+        <% carreras.forEach((carrera) => { %>
+        <option value="<%= carrera.circuito %>"><%= carrera.circuito %></option>
+        <% }) %>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="title">Minutos Totales</label>
+      <input
+        name="minutos"
+        type="text"
+        class="form-control"
+        placeholder="Minutos 00:00"
+        autofocus
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="posicion">Ubicación de cierre</label>
+      <input
+        name="posicion"
+        type="text"
+        class="form-control"
+        placeholder="Posicion"
+        required
+      />
+    </div>
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" name="abandono" />
+      <label class="form-check-label" for="abandono">Abandono</label>
+    </div>
+
+    <div class="mb-3">
+      <input type="submit" value="Guardar" class="btn btn-success" />
+    </div>
+  </form>
+</div>

@@ -1,0 +1,45 @@
+<!-- <div class="row">
+    <% carreras.forEach(function(carrera) { %>
+      <div class="col-md-4 p-4 container">
+        <div class="card bg-dark">
+          <div class="card-header text-success d-flex justify-content-between align-items-center">
+            <h4>Circuito</h4> 
+            <span>🏎</span>
+          </div>
+          <img class="card-img-top" src="<%= carrera.image %>"> -->
+          <!-- <div class="card-body text-light">
+           <h6><span><%= carrera.circuito%></span></h6> 
+          </div>
+          <div class="card-body text-light">
+            <h6> Fecha: <span><%= carrera.fecha %></span></h6> 
+          </div>
+        </div>
+      </div>
+      <%})%>
+</div> -->
+<!-- tabla-carreras.ejs -->
+<div class="col-9">
+    <table class="table table-sm table-dark">
+        <thead class="text-success rounded-2">
+          <tr>
+            <th>N°</th>
+            <th>Fecha</th>
+            <th>Circuito</th>
+            <th>Pais</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let i = 0; i < carreras.length; i++) { %>
+            <tr>
+              <td class="text-success"><%= carreras[i].idCarrera %></td>
+              <td><%= carreras[i].fecha %></td>
+              <td><%= carreras[i].circuito %></td>
+              <td><%= carreras[i].pais %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+</div>
+
+  
+  
