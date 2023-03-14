@@ -19,28 +19,39 @@ export const renderIndexPage = (req, res) => res.render("index", { resultados, e
 /* ----------------------------- pagina reportes ---------------------------- */
 export const renderReportesPage = (req, res) => res.render("reportes", config);
 
-export const renderNuevoResultadoPage = (req, res) => res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes});
-
 export const renderEditarNuevoResultado = (req, res) => {
   const pilotoId = req.params.id; // obtener el id del piloto de los parámetros de la URL
-  const pilotoResultados = resultados.find(p => p.id === parseInt(pilotoId));
-  const { carrera, piloto } = req.body;
-  res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes, pilotoId, pilotoResultados });
+  const idPiloto = resultados.find(p => p.id === parseInt(pilotoId));
+  const { idCarrera, nombre } = req.body;
+  res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes, pilotoId, idPiloto, idCarrera, nombre });
 };
+export const renderNuevoResultadoPage = (req, res) => res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes});
 /* ---------------------------- // Funciones CRUD --------------------------- */ 
-export const crearNuevoResultado = (req, res) => {
-  const { id, escuderia, piloto, circuito, minutos, posicion, tecnicos, personales } = req.body;
+/* --------------- // editar objeto dentro de resultados.json --------------- */
+export const editarNuevoResultado = (req, res) => {
+  const { circuito, minutos, posicion, puntaje, tecnicos, personales } = req.body;
+  const { idCarrera, nombre } = req.body; // agregar campos ocultos para el ID de la carrera y el nombre del piloto
 
-  if (!escuderia || !piloto || !circuito || !minutos || !posicion ) {
+  if (!idPiloto || !circuito || !minutos || !posicion ) {
+    res.status(400).send("Estas intentando editar mal");
+    return;
+  }
+  console.log('<%= idPiloto %> este es el id')
+
+};
+export const crearNuevoResultado = (req, res) => {
+  const { id, escuderia, nombre, circuito, minutos, posicion, tecnicos, personales } = req.body;
+
+  if (!escuderia || !nombre || !circuito || !minutos || !posicion ) {
     res.status(400).send("Ingresar piloto, minutos, posicion y si abandono.");
     return;
   }
-  const idPiloto = resultados.findIndex(r => r.id === parseInt(req.params.id));
+  const idPiloto = resultados.findIndex(r => r.id === parseInt(req.params.idPiloto));
 
   let nuevoResultado = {
-    id: id,
+    id: idPiloto,
     escuderia,
-    piloto,
+    nombre,
     carrera:[{
       circuito,
       minutos,
@@ -59,45 +70,10 @@ export const crearNuevoResultado = (req, res) => {
 
   res.redirect("/");
 };
-/* --------------- // editar objeto dentro de resultados.json --------------- */
-export const editarNuevoResultado = (req, res) => {
-  const pilotoId = req.body.id;
-  const pilotoResultados = resultados.find(p => p.id === pilotoId);
-  const { id, circuito, minutos, posicion, puntaje, tecnicos, personales } = req.body;
-  const { carrera, piloto } = req.body; // agregar campos ocultos para el ID de la carrera y el nombre del piloto
-
-  if (!id || !circuito || !minutos || !posicion ) {
-    res.status(400).send("Estas intentando editar mal");
-    return;
-  }
-
-  for (const carrera of pilotoResultados.carrera) {
-    const carreraId = req.body[`carrera-${carrera.circuito}-id`];
-    carrera.minutos = req.body[`carrera-${carrera.circuito}-minutos`];
-    carrera.posicion = req.body[`carrera-${carrera.circuito}-posicion`];
-    carrera.puntaje = req.body[`carrera-${carrera.circuito}-puntaje`];
-    carrera.tecnicos = req.body[`carrera-${carrera.circuito}-tecnicos`] === 'on';
-    carrera.personales = req.body[`carrera-${carrera.circuito}-personales`] === 'on';
-  
-    // Actualizar el objeto de resultados en memoria con los cambios realizados
-    if (carrera.id === carreraId) {
-      carrera.minutos = req.body[`carrera-${carrera.circuito}-minutos`];
-      carrera.posicion = req.body[`carrera-${carrera.circuito}-posicion`];
-      carrera.puntaje = req.body[`carrera-${carrera.circuito}-puntaje`];
-      carrera.tecnicos = req.body[`carrera-${carrera.circuito}-tecnicos`] === 'on';
-      carrera.personales = req.body[`carrera-${carrera.circuito}-personales`] === 'on';
-    }
-  }
-  // Guardar los resultados en el archivo JSON
-  const json_resultados = JSON.stringify(resultados);
-  fs.writeFileSync("src/resultados.json", json_resultados, "utf-8");
-
-  res.redirect("/");
-};
 /* ------------------ // borrar objeto del resultados.json ------------------ */
 export const borrarResultado = (req, res) => {
   console.log({ resultados });
-  resultados = resultados.filter((resultado) => resultado.id != req.params.id);
+  resultados = resultados.filter((resultado) => resultado.idPiloto != req.params.idPiloto);
 
   // saving data
   const json_resultados = JSON.stringify(resultados);

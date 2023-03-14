@@ -1,8 +1,7 @@
-
-
-<form method="POST" action="/nuevo-resultado/<%= resultado.id %>?_method=PATCH" class="card bg-dark text-light card-body">
+<div class="col-3">
+<form method="POST" action="/nuevo-resultado/<%= resultados.idPiloto %>" class="card bg-dark text-light card-body">
   <div class="mb-3">
-    <input type="hidden" name="id" value="<%= resultado.id %>"/>
+    <input type="hidden" name="id" value="<%= resultados.idPiloto %>"/>
   </div>
   <div class="mb-3">
     <label for="escuderia">Escudería:</label>
@@ -14,9 +13,9 @@
   </div>
   <div class="mb-3">
     <label for="piloto">Piloto:</label>
-    <select name="piloto" id="piloto" class="form-control" required>
-      <% pilotos.forEach((piloto) => { %>
-      <option value="<%= piloto %>"><%= piloto %></option>
+    <select name="nombre" id="nombre" class="form-control" required>
+      <% resultados.forEach((resultado) => { %>
+      <option value="<%= resultado.nombre %>"><%= resultado.nombre %></option>
       <% }) %>
     </select>
   </div>
@@ -33,11 +32,11 @@
     <input type="time" name="minutos" id="minutos" class="form-control" required>
   </div>
   <div class="mb-3">
-    <label for="posicion">Posición y puntaje:</label>
+    <label for="posicion">Posición:</label>
     <select name="posicion" id="posicion" class="form-control" required>
       <% puntajes.forEach((puntaje) => { %>
       <option value="<%= puntaje.idPosicion %>">
-        Posición <%= puntaje.idPosicion %>, Puntaje <%= puntaje.puntaje %>
+        Posición <%= puntaje.idPosicion %>
       </option>
       <% }) %>
     </select>
@@ -57,3 +56,4 @@
     <button type="submit" class="btn btn-success">Guardar</button>
   </div>
 </form>
+</div>
