@@ -1,5 +1,5 @@
 # Developers
-* Nicolas
+* Nicolas Masot
 * Javier Alcayaga
 # Installation
 
