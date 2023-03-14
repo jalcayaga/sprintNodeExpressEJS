@@ -1,71 +1,73 @@
 <!-- ------------------------- tabla de jugadores -------------------------- -->
+
+<div class="container my-4">
+<div class="row">
+  <h4 class="text-white">Clasificación F1 2023</h4>
+</div>
 <section id="tabla">
-    <table class="container table table-dark table-striped">
-        <thead class="text-success">
+  <table class="container table table-dark table-striped">
+      <thead class="text-success">       
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Piloto</th>
+          <th scope="col">🇧🇭</th>
+          <th scope="col">🇸🇦</th>
+          <th scope="col">🇦🇺</th>
+          <th scope="col">🇦🇿</th>
+          <th scope="col">🇺🇸</th>
+          <th scope="col">🇮🇹</th>
+          <th scope="col">🇲🇨</th>
+          <th scope="col">🇪🇸</th>
+          <th scope="col">🇨🇦</th>
+          <th scope="col">🇦🇹</th>
+          <th scope="col">🇬🇧</th>
+          <th scope="col">🇹🇯</th>
+          <th scope="col">🇧🇪</th>
+          <th scope="col">🇳🇱</th>
+          <th scope="col">🇮🇹</th>
+          <th scope="col">🇸🇬</th>
+          <th scope="col">🇯🇵</th>
+          <th scope="col">🇶🇦</th>
+          <th scope="col">🇺🇸</th>
+          <th scope="col">🇲🇽</th>
+          <th scope="col">🇧🇷</th>
+          <th scope="col">🇨🇱</th>
+          <th scope="col">🏴󠁧󠁢󠁥󠁮󠁧󠁿</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < resultados.length; i++) { %>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Piloto</th>
-            <th scope="col">🇧🇭</th>
-            <th scope="col">🇸🇦</th>
-            <th scope="col">🇦🇺</th>
-            <th scope="col">🇦🇿</th>
-            <th scope="col">🇺🇸</th>
-            <th scope="col">🇮🇹</th>
-            <th scope="col">🇲🇨</th>
-            <th scope="col">🇪🇸</th>
-            <th scope="col">🇨🇦</th>
-            <th scope="col">🇦🇹</th>
-            <th scope="col">🇬🇧</th>
-            <th scope="col">🇹🇯</th>
-            <th scope="col">🇧🇪</th>
-            <th scope="col">🇳🇱</th>
-            <th scope="col">🇮🇹</th>
-            <th scope="col">🇸🇬</th>
-            <th scope="col">🇯🇵</th>
-            <th scope="col">🇶🇦</th>
-            <th scope="col">🇺🇸</th>
-            <th scope="col">🇲🇽</th>
-            <th scope="col">🇧🇷</th>
-            <th scope="col">🇨🇱</th>
-            <th scope="col">🏴󠁧󠁢󠁥󠁮󠁧󠁿</th>
+            <td class="text-warning"><%= resultados[i].idPiloto %></td>
+            <td><%= resultados[i].nombre %></td>
+            <td><%= resultados[i].carrera1 %></td>
+            <td><%= resultados[i].carrera2 %></td>
+            <td><%= resultados[i].carrera3 %></td>
+            <td><%= resultados[i].carrera4 %></td>
+            <td><%= resultados[i].carrera5 %></td>
+            <td><%= resultados[i].carrera6 %></td>
+            <td><%= resultados[i].carrera7 %></td>
+            <td><%= resultados[i].carrera8 %></td>
+            <td><%= resultados[i].carrera9 %></td>
+            <td><%= resultados[i].carrera10 %></td>
+            <td><%= resultados[i].carrera11 %></td>
+            <td><%= resultados[i].carrera12 %></td>
+            <td><%= resultados[i].carrera13 %></td>
+            <td><%= resultados[i].carrera14 %></td>
+            <td><%= resultados[i].carrera15 %></td>
+            <td><%= resultados[i].carrera16 %></td>
+            <td><%= resultados[i].carrera17 %></td>
+            <td><%= resultados[i].carrera18 %></td>
+            <td><%= resultados[i].carrera19 %></td>
+            <td><%= resultados[i].carrera20 %></td>
+            <td><%= resultados[i].carrera21 %></td>
+            <td><%= resultados[i].carrera22 %></td>
+            <td><%= resultados[i].carrera23 %></td>
+
           </tr>
-        </thead>
-        <tbody>
-          <% for (let i = 0; i < resultados.length; i++) { %>
-            <tr>
-              <td class="text-success"><%= resultados[i].resultado %></td>
-              <td><%= resultados[i].piloto1 %></td>
-              <td><%= resultados[i].piloto2 %></td>
-              <td><%= carreras[i].pais %></td>
-            </tr>
-          <% } %>
-          <tr>
-            <th scope="row">1</th>
-            <td>Pierre Gasly</td>
-            <td>25</td>
-            <td>18</td>
-            <td>15</td>
-            <td>12</td>
-            <td>10</td>
-            <td>8</td>
-            <td>6</td>
-            <td>4</td>
-            <td>2</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <% } %>
+      </tbody>
+    </table>
+  </section>
+</div>
+
