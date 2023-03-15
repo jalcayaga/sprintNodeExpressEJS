@@ -12,7 +12,7 @@ import {
 const router = Router();
 
 // Ruta para actualizar un resultado existente
-router.put("/nuevo-resultado/", editarNuevoResultado);
+router.put("/nuevo-resultado/:id", editarNuevoResultado);
 // Ruta para mostrar la página principal
 router.get("/", renderIndexPage);
 
@@ -23,11 +23,9 @@ router.get("/reportes", renderReportesPage);
 router.get("/nuevo-resultado", renderNuevoResultadoPage);
 
 // Ruta para crear un nuevo resultado
-// router.post("/nuevo-resultado", crearNuevoResultado);
-
-
+router.post("/nuevo-resultado", crearNuevoResultado);
 
 // Ruta para eliminar un resultado existente
-router.get("/borrar/:idPiloto", borrarResultado);
+router.get("/borrar/:id", borrarResultado);
 
 export default router;

@@ -34,18 +34,24 @@ export const renderNuevoResultadoPage = (req, res) => res.render("nuevo-resultad
 
 /* --------------- // editar objeto dentro de resultados.json --------------- */
 export const editarNuevoResultado = (req, res) => {
-  console.log(idPiloto);
-  console.log(req.body);  
-  const { circuito, minutos, posicion, tecnicos, personales } = req.body;
-  const { idCarrera, nombre } = req.body;
-  const idPiloto = req.params.idPiloto; // obtener el id del piloto de los parámetros de la URL
-  console.log(idPiloto); 
-  if (!idPiloto || !circuito || !minutos || !posicion || !tecnicos ) {
-    res.status(400).send("Estas intentando editar mal");
-    return;
-  }
-  // muestra el id del piloto en la consola
+const {id} = req.params
+const {name, salary} = req.body
+console.log(id, name, salary)
+res.json('received') 
 
+
+
+  // console.log(idPiloto);
+  // console.log(req.body);  
+  // const { circuito, minutos, posicion, tecnicos, personales } = req.body;
+  // const { idCarrera, nombre } = req.body;
+  // const idPiloto = req.params.idPiloto; // obtener el id del piloto de los parámetros de la URL
+  // console.log(idPiloto); 
+  // if (!idPiloto || !circuito || !minutos || !posicion || !tecnicos ) {
+  //   res.status(400).send("Estas intentando editar mal");
+  //   return;
+  // }
+  // muestra el id del piloto en la consola
   // resto del código de la función editarNuevoResultado
 };
 
