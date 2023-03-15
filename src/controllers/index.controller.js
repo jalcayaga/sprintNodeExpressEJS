@@ -20,27 +20,37 @@ export const renderIndexPage = (req, res) => res.render("index", { resultados, e
 export const renderReportesPage = (req, res) => res.render("reportes", config);
 
 export const renderEditarNuevoResultado = (req, res) => {
-  const pilotoId = req.params.id; // obtener el id del piloto de los parámetros de la URL
-  const idPiloto = resultados.find(p => p.id === parseInt(pilotoId));
-  const { idCarrera, nombre } = req.body;
-  res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes, pilotoId, idPiloto, idCarrera, nombre });
+  const idPiloto = req.params.idPiloto;
+  const piloto = resultados.find((p) => p.idPiloto === idPiloto);
+  res.render("nuevo-resultado", { piloto, resultados, equipos, carreras, puntajes });
 };
+
+
 export const renderNuevoResultadoPage = (req, res) => res.render("nuevo-resultado", { resultados, equipos, carreras, puntajes});
 /* ---------------------------- // Funciones CRUD --------------------------- */ 
+
+
+
+
 /* --------------- // editar objeto dentro de resultados.json --------------- */
 export const editarNuevoResultado = (req, res) => {
-  const { circuito, minutos, posicion, puntaje, tecnicos, personales } = req.body;
-  const { idCarrera, nombre } = req.body; // agregar campos ocultos para el ID de la carrera y el nombre del piloto
-
-  if (!idPiloto || !circuito || !minutos || !posicion ) {
+  console.log(idPiloto);
+  console.log(req.body);  
+  const { circuito, minutos, posicion, tecnicos, personales } = req.body;
+  const { idCarrera, nombre } = req.body;
+  const idPiloto = req.params.idPiloto; // obtener el id del piloto de los parámetros de la URL
+  console.log(idPiloto); 
+  if (!idPiloto || !circuito || !minutos || !posicion || !tecnicos ) {
     res.status(400).send("Estas intentando editar mal");
     return;
   }
-  console.log('<%= idPiloto %> este es el id')
+  // muestra el id del piloto en la consola
 
+  // resto del código de la función editarNuevoResultado
 };
+
 export const crearNuevoResultado = (req, res) => {
-  const { id, escuderia, nombre, circuito, minutos, posicion, tecnicos, personales } = req.body;
+  const { escuderia, nombre, circuito, minutos, posicion, tecnicos, personales } = req.body;
 
   if (!escuderia || !nombre || !circuito || !minutos || !posicion ) {
     res.status(400).send("Ingresar piloto, minutos, posicion y si abandono.");

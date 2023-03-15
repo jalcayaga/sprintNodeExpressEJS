@@ -1,11 +1,11 @@
-<div class="col-3">
-<form method="POST" action="/nuevo-resultado/<%= resultados.idPiloto %>" class="card bg-dark text-light card-body">
-  <div class="mb-3">
-    <input type="hidden" name="id" value="<%= resultados.idPiloto %>"/>
-  </div>
+<div class="col-3">  
+  <form method="PUT" action="/nuevo-resultado/<%= resultados.idPiloto %>" class="card bg-dark text-light card-body">
+    <div class="mb-3">
+      <input type="hidden" name="idPiloto" value="<%= resultados.idPiloto %>"/>
+    </div>
   <div class="mb-3">
     <label for="escuderia">Escudería:</label>
-    <select name="escuderia" id="escuderia" class="form-control" required>
+    <select name="escuderia" id="escuderia" class="form-control" autofocus required>
       <% equipos.forEach((equipo) => { %>
       <option value="<%= equipo.escuderia %>"><%= equipo.escuderia %></option>
       <% }) %>
@@ -56,4 +56,5 @@
     <button type="submit" class="btn btn-success">Guardar</button>
   </div>
 </form>
+
 </div>

@@ -10,6 +10,9 @@ import {
 } from "../controllers/index.controller.js";
 
 const router = Router();
+
+// Ruta para actualizar un resultado existente
+router.put("/nuevo-resultado/", editarNuevoResultado);
 // Ruta para mostrar la página principal
 router.get("/", renderIndexPage);
 
@@ -20,10 +23,9 @@ router.get("/reportes", renderReportesPage);
 router.get("/nuevo-resultado", renderNuevoResultadoPage);
 
 // Ruta para crear un nuevo resultado
-router.post("/nuevo-resultado", crearNuevoResultado);
+// router.post("/nuevo-resultado", crearNuevoResultado);
 
-// Ruta para actualizar un resultado existente
-router.patch("/nuevo-resultado/:idPiloto", editarNuevoResultado);
+
 
 // Ruta para eliminar un resultado existente
 router.get("/borrar/:idPiloto", borrarResultado);
