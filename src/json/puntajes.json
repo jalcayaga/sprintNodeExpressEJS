@@ -1,82 +1,82 @@
 [
     {
         "posicion": 1,
-        "puntaje": 25
+        "valor": 25
     },
     {
         "posicion": 2,
-        "puntaje": 18
+        "valor": 18
     },
     {
         "posicion": 3,
-        "puntaje": 15
+        "valor": 15
     },
     {
         "posicion": 4,
-        "puntaje": 12
+        "valor": 12
     },
     {
         "posicion": 5,
-        "puntaje": 10
+        "valor": 10
     },
     {
         "posicion": 6,
-        "puntaje": 8
+        "valor": 8
     },
     {
         "posicion": 7,
-        "puntaje": 6
+        "valor": 6
     },
     {
         "posicion": 8,
-        "puntaje": 4
+        "valor": 4
     },
     {
         "posicion": 9,
-        "puntaje": 2
+        "valor": 2
     },
     {
         "posicion": 10,
-        "puntaje": 1
+        "valor": 1
     },
     {
         "posicion": 11,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 12,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 13,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 14,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 15,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 16,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 17,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 18,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 19,
-        "puntaje": 0
+        "valor": 0
     },
     {
         "posicion": 20,
-        "puntaje": 0
+        "valor": 0
     }
 ]

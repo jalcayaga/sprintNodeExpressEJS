@@ -1,16 +1,15 @@
-<!-- ------------------------- tabla de jugadores -------------------------- -->
+<!-- ------------------------- tabla de resultados -------------------------- -->
 
-<div class="container my-4">
+<div class= "my-4">
 <div class="row">
-  <h4 class="text-white">Clasificación F1 2023</h4>
+  <h4 class="text-white text-center">Tabla Clasificación F1 2023</h4>
 </div>
 <section id="tabla">
-  <table class="container table table-dark table-striped">
+  <table class=" table table-dark table-striped">
       <thead class="text-success">       
         <tr>
           <th scope="col">#</th>
           <th scope="col">Piloto</th>
-          <th scope="col">Total</th>
           <th scope="col">🇧🇭</th>
           <th scope="col">🇸🇦</th>
           <th scope="col">🇦🇺</th>
@@ -34,40 +33,28 @@
           <th scope="col">🇧🇷</th>
           <th scope="col">🇨🇱</th>
           <th scope="col">🏴󠁧󠁢󠁥󠁮󠁧󠁿</th>
+          <th scope="col">Total</th>
         </tr>
       </thead>
       <tbody>
-        <% for (let i = 0; i < resultados.length; i++) { %>
-          <tr>
-            <td class="text-warning"><%= resultados[i].idPiloto %></td>
-            <td><%= resultados[i].nombre %></td>
-            <td>100</td>
-            <td><%= resultados[i].carrera1 %></td>
-            <td><%= resultados[i].carrera2 %></td>
-            <td><%= resultados[i].carrera3 %></td>
-            <td><%= resultados[i].carrera4 %></td>
-            <td><%= resultados[i].carrera5 %></td>
-            <td><%= resultados[i].carrera6 %></td>
-            <td><%= resultados[i].carrera7 %></td>
-            <td><%= resultados[i].carrera8 %></td>
-            <td><%= resultados[i].carrera9 %></td>
-            <td><%= resultados[i].carrera10 %></td>
-            <td><%= resultados[i].carrera11 %></td>
-            <td><%= resultados[i].carrera12 %></td>
-            <td><%= resultados[i].carrera13 %></td>
-            <td><%= resultados[i].carrera14 %></td>
-            <td><%= resultados[i].carrera15 %></td>
-            <td><%= resultados[i].carrera16 %></td>
-            <td><%= resultados[i].carrera17 %></td>
-            <td><%= resultados[i].carrera18 %></td>
-            <td><%= resultados[i].carrera19 %></td>
-            <td><%= resultados[i].carrera20 %></td>
-            <td><%= resultados[i].carrera21 %></td>
-            <td><%= resultados[i].carrera22 %></td>
-            <td><%= resultados[i].carrera23 %></td>
-          </tr>
-        <% } %>
-      </tbody>
+  <% for (let i = 0; i < resultados.length; i++) { %>
+    <tr>
+      <td class="text-warning"><%= resultados[i].idPiloto %></td>
+      <td><%= resultados[i].nombre %></td>
+      <!-- --------------- for anidado para recorrer las carreras ---------------- -->
+      <% let totalPuntos = 0; %>
+      <% for (let j = 0; j < resultados[i].carreras.length; j++) { %>
+        <% totalPuntos += resultados[i].carreras[j].puntaje; %>
+        <td><%= resultados[i].carreras[j].puntaje %></td>
+      <% } %>
+      <% for (let j = resultados[i].carreras.length; j < 23; j++) { %>
+        <td></td>
+      <% } %>
+      <td><%= totalPuntos %></td>
+    </tr>
+  <% } %>
+</tbody>
+
     </table>
   </section>
 </div>

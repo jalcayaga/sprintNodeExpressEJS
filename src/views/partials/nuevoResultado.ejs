@@ -1,11 +1,12 @@
 <div class="col-3">
+  <h4 class="text-white text-center">Ingresar Resultado</h4>
   <form
     method="POST"
     target="/nuevo-resultado/"
     class="card bg-dark text-light card-body"
   >
     <div class="mb-3">
-      <label for="id">ID:</label>
+      <label for="id">N°:</label>
       <select
         name="idPiloto"
         id="idPiloto"
@@ -15,22 +16,6 @@
       >
         <% equipos.forEach((equipo) => { %>
         <option value="<%= equipo.idPiloto %>"><%= equipo.idPiloto %></option>
-        <% }) %>
-      </select>
-    </div>
-    <div class="mb-3">
-      <label for="escuderia">Escudería:</label>
-      <select name="escuderia" id="escuderia" class="form-control" required>
-        <% equipos.forEach((equipo) => { %>
-        <option value="<%= equipo.escuderia %>"><%= equipo.escuderia %></option>
-        <% }) %>
-      </select>
-    </div>
-    <div class="mb-3">
-      <label for="piloto">Piloto:</label>
-      <select name="nombre" id="nombre" class="form-control" required>
-        <% equipos.forEach((equipo) => { %>
-        <option value="<%= equipo.piloto %>"><%= equipo.piloto %></option>
         <% }) %>
       </select>
     </div>
@@ -54,10 +39,9 @@
     </div>
     <div class="mb-3">
       <label for="posicion">Posición:</label>
-      <select name="posicion" id="posicion" class="form-control" required>
+      <select type="number" name="posicion" id="posicion" class="form-control" required>
         <% puntajes.forEach((puntaje) => { %>
-        <option value="<%= puntaje.posicion %>">
-          Posición <%= puntaje.posicion %>
+        <option value=<%= puntaje.posicion %>><%= puntaje.posicion %>
         </option>
         <% }) %>
       </select>
