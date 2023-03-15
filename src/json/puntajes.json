@@ -1,82 +1,82 @@
 [
     {
-        "idPosicion": 1,
+        "posicion": 1,
         "puntaje": 25
     },
     {
-        "idPosicion": 2,
+        "posicion": 2,
         "puntaje": 18
     },
     {
-        "idPosicion": 3,
+        "posicion": 3,
         "puntaje": 15
     },
     {
-        "idPosicion": 4,
+        "posicion": 4,
         "puntaje": 12
     },
     {
-        "idPosicion": 5,
+        "posicion": 5,
         "puntaje": 10
     },
     {
-        "idPosicion": 6,
+        "posicion": 6,
         "puntaje": 8
     },
     {
-        "idPosicion": 7,
+        "posicion": 7,
         "puntaje": 6
     },
     {
-        "idPosicion": 8,
+        "posicion": 8,
         "puntaje": 4
     },
     {
-        "idPosicion": 9,
+        "posicion": 9,
         "puntaje": 2
     },
     {
-        "idPosicion": 10,
+        "posicion": 10,
         "puntaje": 1
     },
     {
-        "idPosicion": 11,
+        "posicion": 11,
         "puntaje": 0
     },
     {
-        "idPosicion": 12,
+        "posicion": 12,
         "puntaje": 0
     },
     {
-        "idPosicion": 13,
+        "posicion": 13,
         "puntaje": 0
     },
     {
-        "idPosicion": 14,
+        "posicion": 14,
         "puntaje": 0
     },
     {
-        "idPosicion": 15,
+        "posicion": 15,
         "puntaje": 0
     },
     {
-        "idPosicion": 16,
+        "posicion": 16,
         "puntaje": 0
     },
     {
-        "idPosicion": 17,
+        "posicion": 17,
         "puntaje": 0
     },
     {
-        "idPosicion": 18,
+        "posicion": 18,
         "puntaje": 0
     },
     {
-        "idPosicion": 19,
+        "posicion": 19,
         "puntaje": 0
     },
     {
-        "idPosicion": 20,
+        "posicion": 20,
         "puntaje": 0
     }
 ]

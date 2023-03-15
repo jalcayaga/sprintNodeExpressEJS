@@ -4,7 +4,6 @@ import {
   renderIndexPage,
   renderReportesPage,
   renderNuevoResultadoPage,
-  crearNuevoResultado,
   editarNuevoResultado,
   borrarResultado,
 } from "../controllers/index.controller.js";
@@ -12,7 +11,7 @@ import {
 const router = Router();
 
 // Ruta para actualizar un resultado existente
-router.put("/nuevo-resultado/:id", editarNuevoResultado);
+router.post("/nuevo-resultado/", editarNuevoResultado);
 // Ruta para mostrar la página principal
 router.get("/", renderIndexPage);
 
@@ -20,12 +19,9 @@ router.get("/", renderIndexPage);
 router.get("/reportes", renderReportesPage);
 
 // Ruta para mostrar la página de creación de resultados
-router.get("/nuevo-resultado", renderNuevoResultadoPage);
-
-// Ruta para crear un nuevo resultado
-router.post("/nuevo-resultado", crearNuevoResultado);
+router.get("/nuevo-resultado/", renderNuevoResultadoPage);
 
 // Ruta para eliminar un resultado existente
-router.get("/borrar/:id", borrarResultado);
+router.get("/borrar/:idPiloto", borrarResultado);
 
 export default router;

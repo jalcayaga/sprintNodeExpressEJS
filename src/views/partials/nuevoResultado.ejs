@@ -1,60 +1,90 @@
-<div class="col-3">  
-  <form method="PUT" action="/nuevo-resultado/1" class="card bg-dark text-light card-body">
+<div class="col-3">
+  <form
+    method="POST"
+    target="/nuevo-resultado/"
+    class="card bg-dark text-light card-body"
+  >
     <div class="mb-3">
-      <input type="hidden" name="idPiloto" value="<%= resultados.idPiloto %>"/>
+      <label for="id">ID:</label>
+      <select
+        name="idPiloto"
+        id="idPiloto"
+        class="form-control"
+        autofocus
+        required
+      >
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.idPiloto %>"><%= equipo.idPiloto %></option>
+        <% }) %>
+      </select>
     </div>
-  <div class="mb-3">
-    <label for="escuderia">Escudería:</label>
-    <select name="escuderia" id="escuderia" class="form-control" autofocus required>
-      <% equipos.forEach((equipo) => { %>
-      <option value="<%= equipo.escuderia %>"><%= equipo.escuderia %></option>
-      <% }) %>
-    </select>
-  </div>
-  <div class="mb-3">
-    <label for="piloto">Piloto:</label>
-    <select name="nombre" id="nombre" class="form-control" required>
-      <% resultados.forEach((resultado) => { %>
-      <option value="<%= resultado.nombre %>"><%= resultado.nombre %></option>
-      <% }) %>
-    </select>
-  </div>
-  <div class="mb-3">
-    <label for="circuito">Circuito:</label>
-    <select name="circuito" id="circuito" class="form-control" required>
-      <% carreras.forEach((carrera) => { %>
-      <option value="<%= carrera.circuito %>"><%= carrera.circuito %></option>
-      <% }) %>
-    </select>
-  </div>
-  <div class="mb-3">
-    <label for="minutos">Minutos Totales:</label>
-    <input type="time" name="minutos" id="minutos" class="form-control" required>
-  </div>
-  <div class="mb-3">
-    <label for="posicion">Posición:</label>
-    <select name="posicion" id="posicion" class="form-control" required>
-      <% puntajes.forEach((puntaje) => { %>
-      <option value="<%= puntaje.idPosicion %>">
-        Posición <%= puntaje.idPosicion %>
-      </option>
-      <% }) %>
-    </select>
-  </div>
-  <div class="mb-3 form-check">
-    <label class="form-check-label">Abandono por problemas:</label>
-    <div>
-      <input type="checkbox" name="tecnicos" id="tecnicos" class="form-check-input">
-      <label for="tecnicos" class="form-check-label">Técnicos</label>
+    <div class="mb-3">
+      <label for="escuderia">Escudería:</label>
+      <select name="escuderia" id="escuderia" class="form-control" required>
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.escuderia %>"><%= equipo.escuderia %></option>
+        <% }) %>
+      </select>
     </div>
-    <div>
-      <input type="checkbox" name="personales" id="personales" class="form-check-input">
-      <label for="personales" class="form-check-label">Personales</label>
+    <div class="mb-3">
+      <label for="piloto">Piloto:</label>
+      <select name="nombre" id="nombre" class="form-control" required>
+        <% equipos.forEach((equipo) => { %>
+        <option value="<%= equipo.piloto %>"><%= equipo.piloto %></option>
+        <% }) %>
+      </select>
     </div>
-  </div>
-  <div class="mb-3">
-    <button type="submit" class="btn btn-success">Guardar</button>
-  </div>
-</form>
-
+    <div class="mb-3">
+      <label for="circuito">Circuito:</label>
+      <select name="circuito" id="circuito" class="form-control" required>
+        <% carreras.forEach((carrera) => { %>
+        <option value="<%= carrera.circuito %>"><%= carrera.circuito %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="minutos">Minutos Totales:</label>
+      <input
+        type="time"
+        name="minutos"
+        id="minutos"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="posicion">Posición:</label>
+      <select name="posicion" id="posicion" class="form-control" required>
+        <% puntajes.forEach((puntaje) => { %>
+        <option value="<%= puntaje.posicion %>">
+          Posición <%= puntaje.posicion %>
+        </option>
+        <% }) %>
+      </select>
+    </div>
+    <div class="mb-3 form-check">
+      <label class="form-check-label">Abandono por problemas:</label>
+      <div>
+        <input
+          type="checkbox"
+          name="tecnicos"
+          id="tecnicos"
+          class="form-check-input"
+        />
+        <label for="tecnicos" class="form-check-label">Técnicos</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="personales"
+          id="personales"
+          class="form-check-input"
+        />
+        <label for="personales" class="form-check-label">Personales</label>
+      </div>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-success">Guardar</button>
+    </div>
+  </form>
 </div>
