@@ -1,0 +1,20 @@
+<div class="col">
+    <h4 class="text-white text-center">Ranking Escuderías 2023</h4>
+    <table class="table table-sm table-dark">
+      <thead class="text-success rounded-2">
+        <tr>
+          <th>Ranking</th>
+          <th>Logo Escuderias</th>
+          <th>Escudería</th>
+          <th>Total ptos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% let rankingOrdenado = Object.entries(ranking)
+          .sort((a, b) => a[1].ranking - b[1].ranking);
+           for (let i = 0; i < rankingOrdenado.length; i++) {
+             let escuderia = rankingOrdenado[i][0];
+             let totales = rankingOrdenado[i][1].totales;
+             let ranking = rankingOrdenado[i][1].ranking;
+        %
+  

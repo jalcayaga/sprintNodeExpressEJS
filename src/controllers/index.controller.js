@@ -14,11 +14,42 @@ let carreras = JSON.parse(json_carreras);
 const json_puntajes = fs.readFileSync("src/json/puntajes.json", "utf-8");
 let puntajes = JSON.parse(json_puntajes);
 
+const json_ranking = fs.readFileSync("src/json/ranking.json", "utf-8");
+let ranking = JSON.parse(json_ranking);
+
+/* ------------------- Funciones para cargar en el inicio ------------------- */
+const cargarResultados = () => {
+  let resultados = JSON.parse(json_resultados);
+  return resultados;
+};
+
+const calcularPuntajes = (resultados) => {
+  let puntajes = {};
+
+  resultados.forEach((resultado) => {
+    if (!puntajes[resultado.escuderia]) {
+      puntajes[resultado.escuderia] = 0;
+    }
+    puntajes[resultado.escuderia] += resultado.puntaje;
+  });
+
+  return puntajes;
+};
+
+const escribirRanking = (puntajes) => {
+  fs.writeFileSync("src/json/ranking.json", JSON.stringify(puntajes));
+};
+
 // render de rutas
 export const renderIndexPage = (req, res) =>
   res.render("index", { resultados, equipos, carreras });
 /* ----------------------------- pagina reportes ---------------------------- */
-export const renderReportesPage = (req, res) => res.render("reportes", config);
+export const renderReportesPage = (req, res) => {
+  let resultados = cargarResultados();
+  let puntajes = calcularPuntajes(resultados);
+  escribirRanking(puntajes);
+  res.render("reportes", { config, resultados, ranking });
+};
 
 export const renderEditarNuevoResultado = (req, res) => {
   res.render("nuevo-resultado", {
@@ -81,17 +112,6 @@ export const editarNuevoResultado = (req, res) => {
   /* ---------------------- Variables nombre y escuderia ---------------------- */
   let nombre = "";
   let escuderia = "";
-
-  // Buscar el equipo del piloto
-  let equipoPiloto = equipos.find((equipo) => equipo.idPiloto == idPiloto);
-
-  if (equipoPiloto) {
-    nombre = equipoPiloto.nombre;
-    escuderia = equipoPiloto.escuderia;
-  } else {
-    console.log(`No se encontró el equipo del piloto con id ${idPiloto}`);
-  }
-
   let piloto = resultados.find((piloto) => piloto.idPiloto == idPiloto);
 
   if (piloto) {
@@ -103,6 +123,15 @@ export const editarNuevoResultado = (req, res) => {
       tecnicos,
       personales,
     };
+    // Buscar el equipo del piloto
+    let equipoPiloto = equipos.find((equipo) => equipo.idPiloto == idPiloto);
+
+    if (equipoPiloto) {
+      nombre = equipoPiloto.nombre;
+      escuderia = equipoPiloto.escuderia;
+    } else {
+      console.log(`No se encontró el equipo del piloto con id ${idPiloto}`);
+    }
 
     // Buscar puntaje correspondiente a la posición
     let puntaje = puntajes.find((puntaje) => puntaje.posicion == posicion);
@@ -125,6 +154,16 @@ export const editarNuevoResultado = (req, res) => {
 
     res.redirect("/");
   } else {
+    
+     // Buscar el equipo del piloto
+     let equipoPiloto = equipos.find((equipo) => equipo.idPiloto == idPiloto);
+
+     if (equipoPiloto) {
+       nombre = equipoPiloto.nombre;
+       escuderia = equipoPiloto.escuderia;
+     } else {
+       console.log(`No se encontró el equipo del piloto con id ${idPiloto}`);
+     }
     // Si no se encuentra el piloto, crear uno nuevo
     piloto = {
       idPiloto,
@@ -171,3 +210,109 @@ export const borrarResultado = (req, res) => {
   fs.writeFileSync("src/resultados.json", json_resultados);
   res.redirect("/");
 };
+
+/* ------------------------------ crear reportes ----------------------------- */
+export const crearReportes = (req, res) => {
+  let puntajesEscuderias = {};
+
+  for (let i = 0; i < resultados.length; i++) {
+    let escuderia = resultados[i].escuderia;
+    let puntajeCarrera = resultados[i].carreras.reduce(
+      (total, carrera) => total + carrera.puntaje,
+      0
+    );
+
+    if (!puntajesEscuderias.hasOwnProperty(escuderia)) {
+      puntajesEscuderias[escuderia] = 0;
+    }
+
+    puntajesEscuderias[escuderia] += puntajeCarrera;
+  }
+
+  // Convierte el objeto de puntajes en un array y ordenalo en orden descendente
+  let puntajesOrdenados = Object.entries(puntajesEscuderias).sort(
+    (a, b) => b[1] - a[1]
+  );
+
+  // Asigna un rango a cada escudería
+  for (let i = 0; i < puntajesOrdenados.length; i++) {
+    puntajesOrdenados[i][1] = i + 1;
+  }
+
+  // Agrega la clasificación a cada objeto de resultado
+  for (let i = 0; i < resultados.length; i++) {
+    let escuderia = resultados[i].escuderia;
+    resultados[i].totales = puntajesEscuderias[escuderia];
+    resultados[i].ranking = puntajesOrdenados.find(
+      (item) => item[0] === escuderia
+    )[1];
+  }
+};
+
+
+
+// const crearRanking = (resultados) => {
+//   let puntajesEscuderias = {};
+
+//   for (let i = 0; i < resultados.length; i++) {
+//     let escuderia = resultados[i].escuderia;
+//     let puntajeCarrera = resultados[i].carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
+
+//     if (!puntajesEscuderias.hasOwnProperty(escuderia)) {
+//       puntajesEscuderias[escuderia] = 0;
+//     }
+
+//     puntajesEscuderias[escuderia] += puntajeCarrera;
+//   }
+
+//   let puntajesOrdenados = Object.entries(puntajesEscuderias)
+//     .sort((a, b) => b[1] - a[1]);
+
+//   for (let i = 0; i < puntajesOrdenados.length; i++) {
+//     puntajesOrdenados[i][1] = i + 1;
+//   }
+
+//   let ranking = {};
+
+//   for (let i = 0; i < resultados.length; i++) {
+//     let escuderia = resultados[i].escuderia;
+//     ranking[escuderia] = {
+//       totales: puntajesEscuderias[escuderia],
+//       ranking: puntajesOrdenados.find(item => item[0] === escuderia)[1]
+//     };
+//   }
+
+//   fs.writeFileSync('ranking.json', JSON.stringify(ranking));
+// };
+
+//   // Crea un objeto para almacenar el puntaje total de cada escudería
+// let puntajesEscuderias = {};
+
+// for (let i = 0; i < resultados.length; i++) {
+//   let escuderia = resultados[i].escuderia;
+//   let puntajeCarrera = resultados[i].carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
+
+//   if (!puntajesEscuderias.hasOwnProperty(escuderia)) {
+//     puntajesEscuderias[escuderia] = 0;
+//   }
+
+//   puntajesEscuderias[escuderia] += puntajeCarrera;
+// }
+
+// // Convierte el objeto de puntajes en un array y ordenalo en orden descendente
+// let puntajesOrdenados = Object.entries(puntajesEscuderias)
+//   .sort((a, b) => b[1] - a[1]);
+
+// // Asigna un rango a cada escudería
+// for (let i = 0; i < puntajesOrdenados.length; i++) {
+//   puntajesOrdenados[i][1] = i + 1;
+// }
+
+// // Agrega la clasificación a cada objeto de resultado
+// for (let i = 0; i < resultados.length; i++) {
+//   let escuderia = resultados[i].escuderia;
+//   resultados[i].totales = puntajesEscuderias[escuderia];
+//   resultados[i].ranking = puntajesOrdenados.find(item => item[0] === escuderia)[1];
+// }
+
+// };

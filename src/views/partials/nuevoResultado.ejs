@@ -15,7 +15,7 @@
         required
       >
         <% equipos.forEach((equipo) => { %>
-        <option value="<%= equipo.idPiloto %>"><%= equipo.idPiloto %></option>
+        <option value=<%= equipo.idPiloto %>><%= equipo.idPiloto %> <span><%= equipo.nombre %></span></option>
         <% }) %>
       </select>
     </div>

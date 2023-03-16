@@ -3,37 +3,15 @@
 
 <head>
   <%- include('partials/header') %>
-    <title>Page Not found</title>
+    <title>Reportes</title>
 </head>
 
 <body>
 
-
   <%- include('partials/navigation') %>
 
     <div class="container p-4">
-      <div class="col-md-4 offset-md-4">
-        <div class="card card-body">
-          <h1>
-            Reporte
-          </h1>
-
-          <p>
-            APPID:
-            <strong style="font-size: 3rem;">
-              <%= APPID %>
-            </strong>
-          </p>
-
-          <p>
-            HTTP PORT:
-            <strong>
-              <%= PORT %>
-            </strong>
-          </p>
-
-        </div>
-      </div>
+      <%- include('partials/reporte1') %>
     </div>
 
     <%- include('partials/footer') %>

@@ -6,6 +6,7 @@ import {
   renderNuevoResultadoPage,
   editarNuevoResultado,
   borrarResultado,
+  crearReportes,
 } from "../controllers/index.controller.js";
 
 const router = Router();
@@ -16,7 +17,7 @@ router.post("/nuevo-resultado/", editarNuevoResultado);
 router.get("/", renderIndexPage);
 
 // Ruta para mostrar la página de reportes
-router.get("/reportes", renderReportesPage);
+router.get("/reportes", renderReportesPage, crearReportes);
 
 // Ruta para mostrar la página de creación de resultados
 router.get("/nuevo-resultado/", renderNuevoResultadoPage);

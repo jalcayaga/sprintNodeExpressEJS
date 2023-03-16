@@ -1,0 +1,27 @@
+<div class="col">
+    <h4 class="text-white text-center">Ranking Escuderías 2023</h4>
+    <table class="table table-sm table-dark">
+      <thead class="text-success rounded-2">
+        <tr>
+          <th>Ranking</th>
+          <th>Logo Escuderias</th>
+          <th>Escudería</th>
+          <th>Total ptos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < ranking.length; i++) { %>
+          <tr>
+            <td class="text-warning"><%= ranking[i].ranking %></td>
+            <td><img src="img/escuderia/1"></td>
+                <td><%= ranking[i].escuderia %></td>
+                <td><%= ranking[i].totales %></td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+  </div>
+  
+  
+  
+  
