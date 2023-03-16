@@ -1,1 +1,12 @@
-{"Alfa Romeo":null,"Alpine":null,"Alpha Tauri":null,"Aston Martin":null,"Ferrari":null,"Haas":null,"McLaren":null,"Mercedes":null,"Red Bull":null,"Williams":null}
+{
+  "Alfa Romeo": { "totales": null, "ranking": 1 },
+  "Alpine": { "totales": null, "ranking": 2 },
+  "Alpha Tauri": { "totales": null, "ranking": 3 },
+  "Aston Martin": { "totales": null, "ranking": 4 },
+  "Ferrari": { "totales": null, "ranking": 5 },
+  "Haas": { "totales": null, "ranking": 6 },
+  "McLaren": { "totales": null, "ranking": 7 },
+  "Mercedes": { "totales": null, "ranking": 8 },
+  "Red Bull": { "totales": null, "ranking": 9 },
+  "Williams": { "totales": null, "ranking": 10 }
+}
