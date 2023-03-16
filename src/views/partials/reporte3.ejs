@@ -1,0 +1,27 @@
+<div class="col mt-3">
+  <h4 class="text-white text-center">Tiempos Totales Pilotos 2023</h4>
+  <table class="table table-sm table-dark">
+    <thead class="text-warning">
+      <tr>
+        <th>Posición</th>
+        <th>Piloto</th>
+        <th>Escudería</th>
+        <th>Tiempo total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% tiemposTotalesPilotos.forEach((tiempoPiloto) => { %>
+        <% const resultado = resultados.find(r => r.idPiloto === tiempoPiloto.idPiloto); %>
+        <tr>
+          <td class="text-warning"><%= tiempoPiloto.posicion %></td>
+          <td><%= resultado.nombre %></td>
+          <td><%= resultado.escuderia %></td>
+          <td>
+            <% const segundosTotales = tiempoPiloto.tiempoTotal || 0; %>
+            <%= Math.floor(segundosTotales / 60) %>:<%= ("0" + (segundosTotales % 60)).slice(-2) %>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>

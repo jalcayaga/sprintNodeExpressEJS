@@ -18,24 +18,7 @@ let puntajes = JSON.parse(json_puntajes);
 const json_ranking = fs.readFileSync("src/json/ranking.json", "utf-8");
 let ranking = JSON.parse(json_ranking);
 
-/* ------------------- Funciones para cargar en el inicio ------------------- */
-const cargarRanking = () => {
-  const json_ranking = fs.readFileSync("src/json/ranking.json", "utf-8");
-  let ranking = JSON.parse(json_ranking);
-  return ranking;
-};
-
-const actualizarRanking = (puntajes, totales, ranking) => {
-  let i = 1;
-  Object.entries(puntajes)
-    .sort((a, b) => b[1] - a[1])
-    .forEach(([escuderia, puntos]) => {
-      ranking[escuderia].totales = totales[escuderia];
-      ranking[escuderia].ranking = i;
-      i++;
-    });
-};
-
+/* ------------------- Funciones para reportes 1 ------------------- */
 const calcularPuntajes = (resultados) => {
   let puntajes = {};
 
@@ -50,24 +33,59 @@ const calcularPuntajes = (resultados) => {
 
   return puntajes;
 };
-
-
-const obtenerTotales = (resultados) => {
-  let totales = {};
+/* ------------------------ Funcion para reportes total abandonos ----------------------- */
+const calcularAbandonos = (resultados) => {
+  let abandonos = {};
 
   resultados.forEach((resultado) => {
-    if (!totales[resultado.escuderia]) {
-      totales[resultado.escuderia] = 0;
-    }
-    totales[resultado.escuderia] += resultado.tiempo;
+    let piloto = resultado.idPiloto;
+    let abandonosPiloto = resultado.carreras.filter(
+      (carrera) => carrera.tecnicos || carrera.personales
+    ).length;
+
+    abandonos[piloto] = abandonosPiloto;
   });
 
-  return totales;
+  return abandonos;
+};
+/* ------------------- funcion para reportes total tiempos ------------------ */
+const calcularTiemposTotalesPilotos = (resultados) => {
+  let tiempos = {};
+
+  resultados.forEach((resultado) => {
+    let piloto = resultado.idPiloto;
+    console.log(`Procesando piloto: ${piloto}`); // Agregar esta línea
+    let tiempoTotalPiloto = resultado.carreras.reduce((total, carrera) => {
+      console.log(`Procesando carrera: ${JSON.stringify(carrera)}`); // Agregar esta línea
+      return total + convertirTiempoASegundos(carrera.tiempo);
+    }, 0);
+    tiempos[piloto] = tiempoTotalPiloto;
+  });
+
+  return tiempos;
+};
+
+const convertirTiempoASegundos = (tiempo) => {
+  console.log(`Tiempo recibido: ${tiempo}`); // Agregar esta línea
+
+  if (!tiempo || typeof tiempo !== 'string') {
+    return 0;
+  }
+
+  const partes = tiempo.split(':');
+
+  if (partes.length !== 3) {
+    return 0;
+  }
+
+  const [horas, minutos, segundos] = partes.map(Number);
+  const totalSegundos = horas * 3600 + minutos * 60 + segundos;
+  console.log(`Tiempo: ${tiempo}, Segundos: ${totalSegundos}`);
+  return totalSegundos;
 };
 
 // render de rutas
-export const renderIndexPage = (req, res) =>
-  res.render("index", { resultados, equipos, carreras });
+export const renderIndexPage = (req, res) => res.render("index", { resultados, equipos, carreras });
 
 /* ----------------------------- pagina reportes ---------------------------- */
 export const renderReportesPage = (req, res) => {
@@ -79,10 +97,29 @@ export const renderReportesPage = (req, res) => {
       puntos: entry[1],
       posicion: index + 1,
     }));
-  res.render("reportes", { config, resultados, ranking });
+  let abandonos = calcularAbandonos(resultados);
+  let tiemposTotalesPilotos = calcularTiemposTotalesPilotos(resultados);
+
+  // Convierte el objeto tiemposTotalesPilotos en un array y ordena de mayor a menor tiempo
+  let tiemposTotalesPilotosArray = Object.entries(tiemposTotalesPilotos).sort(
+    (a, b) => b[1] - a[1]
+  );
+
+  // Asigna una posición en el ranking a cada piloto
+  tiemposTotalesPilotosArray = tiemposTotalesPilotosArray.map((entry, index) => ({
+    idPiloto: entry[0],
+    tiempoTotal: entry[1],
+    posicion: index + 1,
+  }));
+
+  res.render("reportes", {
+    config,
+    resultados,
+    ranking,
+    abandonos,
+    tiemposTotalesPilotos: tiemposTotalesPilotosArray,
+  });
 };
-
-
 
 export const renderEditarNuevoResultado = (req, res) => {
   res.render("nuevo-resultado", {
@@ -99,7 +136,7 @@ export const renderNuevoResultadoPage = (req, res) =>
 
 /* --------------- // Editar o Crear objeto dentro de resultados.json --------------- */
 export const editarNuevoResultado = (req, res) => {
-  let { idPiloto, circuito, minutos, posicion, tecnicos, personales } =
+  let { idPiloto, circuito, tiempo, posicion, tecnicos, personales } =
     req.body;
   // Leer archivo de resultados
   const json_resultados = fs.readFileSync("src/resultados.json", "utf-8");
@@ -132,7 +169,8 @@ export const editarNuevoResultado = (req, res) => {
   tecnicos = tecnicos ? true : false;
   personales = personales ? true : false;
 
-  if (!idPiloto || !minutos || !posicion) {
+  //condiciones desde el backend para no continuar
+  if (!idPiloto || !tiempo || !posicion) {
     res.status(400).send("Faltan datos obligatorios");
     return;
   }
@@ -145,12 +183,13 @@ export const editarNuevoResultado = (req, res) => {
   /* ---------------------- Variables nombre y escuderia ---------------------- */
   let nombre = "";
   let escuderia = "";
+  //buscamos el piloto por idPiloto y le insertamos claves y valores
   let piloto = resultados.find((piloto) => piloto.idPiloto == idPiloto);
 
   if (piloto) {
     let carrera = {
       circuito,
-      minutos,
+      tiempo,
       posicion,
       puntaje: null,
       tecnicos,
@@ -186,6 +225,8 @@ export const editarNuevoResultado = (req, res) => {
     fs.writeFileSync("src/resultados.json", json_resultados, "utf-8");
 
     res.redirect("/");
+
+    //si no encuentra al piloto lo crea en esta parte
   } else {
 
      // Buscar el equipo del piloto
@@ -208,7 +249,7 @@ export const editarNuevoResultado = (req, res) => {
 
     let carrera = {
       circuito,
-      minutos,
+      tiempo,
       posicion,
       puntaje: null,
       tecnicos,
@@ -225,11 +266,19 @@ export const editarNuevoResultado = (req, res) => {
     }
     piloto.carreras.push(carrera);
 
-    // guarda el array en un json
-    let json_resultados = JSON.stringify(resultados);
-    fs.writeFileSync("src/resultados.json", json_resultados, "utf-8");
-    res.redirect("/");
-  }
+  // Ordena los resultados por total de puntos descendente
+  resultados.sort((a, b) => {
+    const totalPuntosA = a.carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
+    const totalPuntosB = b.carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
+
+    return totalPuntosB - totalPuntosA;
+  });
+
+  // guarda el array en un json
+  let json_resultados = JSON.stringify(resultados);
+  fs.writeFileSync("src/resultados.json", json_resultados, "utf-8");
+  res.redirect("/");
+};
 };
 /* ------------------ // borrar objeto del resultados.json ------------------ */
 export const borrarResultado = (req, res) => {
@@ -243,7 +292,6 @@ export const borrarResultado = (req, res) => {
   fs.writeFileSync("src/resultados.json", json_resultados);
   res.redirect("/");
 };
-
 /* ------------------------------ crear reportes ----------------------------- */
 export const crearReportes = (req, res) => {
   let puntajesEscuderias = {};
@@ -281,71 +329,3 @@ export const crearReportes = (req, res) => {
     )[1];
   }
 };
-
-
-
-// const crearRanking = (resultados) => {
-//   let puntajesEscuderias = {};
-
-//   for (let i = 0; i < resultados.length; i++) {
-//     let escuderia = resultados[i].escuderia;
-//     let puntajeCarrera = resultados[i].carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
-
-//     if (!puntajesEscuderias.hasOwnProperty(escuderia)) {
-//       puntajesEscuderias[escuderia] = 0;
-//     }
-
-//     puntajesEscuderias[escuderia] += puntajeCarrera;
-//   }
-
-//   let puntajesOrdenados = Object.entries(puntajesEscuderias)
-//     .sort((a, b) => b[1] - a[1]);
-
-//   for (let i = 0; i < puntajesOrdenados.length; i++) {
-//     puntajesOrdenados[i][1] = i + 1;
-//   }
-
-//   let ranking = {};
-
-//   for (let i = 0; i < resultados.length; i++) {
-//     let escuderia = resultados[i].escuderia;
-//     ranking[escuderia] = {
-//       totales: puntajesEscuderias[escuderia],
-//       ranking: puntajesOrdenados.find(item => item[0] === escuderia)[1]
-//     };
-//   }
-
-//   fs.writeFileSync('ranking.json', JSON.stringify(ranking));
-// };
-
-//   // Crea un objeto para almacenar el puntaje total de cada escudería
-// let puntajesEscuderias = {};
-
-// for (let i = 0; i < resultados.length; i++) {
-//   let escuderia = resultados[i].escuderia;
-//   let puntajeCarrera = resultados[i].carreras.reduce((total, carrera) => total + carrera.puntaje, 0);
-
-//   if (!puntajesEscuderias.hasOwnProperty(escuderia)) {
-//     puntajesEscuderias[escuderia] = 0;
-//   }
-
-//   puntajesEscuderias[escuderia] += puntajeCarrera;
-// }
-
-// // Convierte el objeto de puntajes en un array y ordenalo en orden descendente
-// let puntajesOrdenados = Object.entries(puntajesEscuderias)
-//   .sort((a, b) => b[1] - a[1]);
-
-// // Asigna un rango a cada escudería
-// for (let i = 0; i < puntajesOrdenados.length; i++) {
-//   puntajesOrdenados[i][1] = i + 1;
-// }
-
-// // Agrega la clasificación a cada objeto de resultado
-// for (let i = 0; i < resultados.length; i++) {
-//   let escuderia = resultados[i].escuderia;
-//   resultados[i].totales = puntajesEscuderias[escuderia];
-//   resultados[i].ranking = puntajesOrdenados.find(item => item[0] === escuderia)[1];
-// }
-
-// };

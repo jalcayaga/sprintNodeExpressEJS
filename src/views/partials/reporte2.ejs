@@ -1,1 +1,29 @@
-<td><img src="img/escuderia/<%= escuderia %>.png" alt="<%= escuderia %>" /></td>
+<div class="col-6 mt-3">
+    <h4 class="text-white text-center">Ranking de Abandonos por Piloto 2023</h4>
+    <table class="table table-sm table-dark">
+      <thead class="text-danger">
+        <tr>
+          <th>Posición</th>
+          <th>Piloto</th>
+          <th>Abandonos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% 
+          const pilotosAbandonos = Object.entries(abandonos)
+            .sort((a, b) => b[1] - a[1])
+            .map(([idPiloto, abandonos]) => ({ idPiloto, abandonos }));
+  
+          pilotosAbandonos.forEach((pilotoAbandono, index) => {
+            const piloto = resultados.find((p) => p.idPiloto == pilotoAbandono.idPiloto);
+        %>
+          <tr>
+            <td class="text-danger"><%= index + 1 %></td>
+            <td><%= piloto ? piloto.nombre : '' %></td>
+            <td><%= pilotoAbandono.abandonos %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+  

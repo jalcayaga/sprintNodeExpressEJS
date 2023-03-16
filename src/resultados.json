@@ -1,1 +1,3654 @@
-[{"idPiloto":"1","nombre":"Valtteri Bottas","escuderia":"Alfa Romeo","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"19:27","posicion":"1","puntaje":25,"tecnicos":true,"personales":true},{"circuito":"🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit","minutos":"22:56","posicion":"2","puntaje":18,"tecnicos":true,"personales":false}]},{"idPiloto":"2","nombre":"Guanyu Zhou","escuderia":"Alfa Romeo","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"19:33","posicion":"2","puntaje":18,"tecnicos":false,"personales":false},{"circuito":"🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit","minutos":"03:48","posicion":"5","puntaje":10,"tecnicos":false,"personales":true}]},{"idPiloto":"3","nombre":"Esteban Ocon","escuderia":"Alpine","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:06","posicion":"3","puntaje":15,"tecnicos":false,"personales":false}]},{"idPiloto":"4","nombre":"Pierre Gasly","escuderia":"Alpine","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:06","posicion":"2","puntaje":18,"tecnicos":false,"personales":false}]},{"idPiloto":"5","nombre":"Nyck de Vries","escuderia":"Alpha Tauri","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:09","posicion":"4","puntaje":12,"tecnicos":true,"personales":false}]},{"idPiloto":"6","nombre":"Yuki Tsunoda","escuderia":"Alpha Tauri","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:10","posicion":"6","puntaje":8,"tecnicos":false,"personales":false}]},{"idPiloto":"7","nombre":"Lance Stroll","escuderia":"Aston Martin","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:10","posicion":"5","puntaje":10,"tecnicos":true,"personales":false}]},{"idPiloto":"8","nombre":"Fernando Alonso","escuderia":"Aston Martin","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:10","posicion":"8","puntaje":4,"tecnicos":false,"personales":false}]},{"idPiloto":"9","nombre":"Charles Leclerc","escuderia":"Ferrari","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:11","posicion":"9","puntaje":2,"tecnicos":false,"personales":false}]},{"idPiloto":"10","nombre":"Carlos Sainz","escuderia":"Ferrari","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:11","posicion":"10","puntaje":1,"tecnicos":true,"personales":true}]},{"idPiloto":"11","nombre":"Kevin Magnussen","escuderia":"Haas","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:11","posicion":"11","puntaje":0,"tecnicos":false,"personales":false}]},{"idPiloto":"12","nombre":"Nico Hulkenberg","escuderia":"Haas","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:11","posicion":"12","puntaje":0,"tecnicos":false,"personales":false}]},{"idPiloto":"13","nombre":"Lando Norris","escuderia":"McLaren","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:13","posicion":"13","puntaje":0,"tecnicos":false,"personales":false}]},{"idPiloto":"14","nombre":"Oscar Piastri","escuderia":"McLaren","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:13","posicion":"14","puntaje":0,"tecnicos":false,"personales":false}]},{"idPiloto":"15","nombre":"Lewis Hamilton","escuderia":"Mercedes","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:14","posicion":"15","puntaje":0,"tecnicos":false,"personales":false},{"circuito":"🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit","minutos":"03:10","posicion":"1","puntaje":25,"tecnicos":false,"personales":false}]},{"idPiloto":"16","nombre":"George Russell","escuderia":"Mercedes","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:15","posicion":"16","puntaje":0,"tecnicos":false,"personales":false}]},{"idPiloto":"17","nombre":"Max Verstappen","escuderia":"Red Bull","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:13","posicion":"17","puntaje":0,"tecnicos":true,"personales":false}]},{"idPiloto":"18","nombre":"Checo Pérez","escuderia":"Red Bull","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:14","posicion":"18","puntaje":0,"tecnicos":false,"personales":true}]},{"idPiloto":"19","nombre":"Alex Albon","escuderia":"Williams","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:14","posicion":"1","puntaje":25,"tecnicos":true,"personales":false}]},{"idPiloto":"20","nombre":"Logan Sargeant","escuderia":"Williams","carreras":[{"circuito":"🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit","minutos":"23:14","posicion":"1","puntaje":25,"tecnicos":true,"personales":false}]}]
+[
+  {
+    "idPiloto": "1",
+    "nombre": "Valtteri Bottas",
+    "escuderia": "Alfa Romeo",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:00:19:27",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": true,
+        "personales": true
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:23:32",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:22:32",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:17:37",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:15:38",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:23:38",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:39",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:16:39",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:15:39",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:15:40",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:15:40",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:21:41",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:17:43",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:44",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:23:44",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:14:45",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:45",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:23:45",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:15:46",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:46",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:16:46",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:21:47",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:22:47",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "2",
+    "nombre": "Guanyu Zhou",
+    "escuderia": "Alfa Romeo",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "3",
+    "nombre": "Esteban Ocon",
+    "escuderia": "Alpine",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "4",
+    "nombre": "Pierre Gasly",
+    "escuderia": "Alpine",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "5",
+    "nombre": "Nyck de Vries",
+    "escuderia": "Alpha Tauri",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "15",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "6",
+    "nombre": "Yuki Tsunoda",
+    "escuderia": "Alpha Tauri",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "7",
+    "nombre": "Lance Stroll",
+    "escuderia": "Aston Martin",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "8",
+    "nombre": "Fernando Alonso",
+    "escuderia": "Aston Martin",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "9",
+    "nombre": "Charles Leclerc",
+    "escuderia": "Ferrari",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "10",
+    "nombre": "Carlos Sainz",
+    "escuderia": "Ferrari",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "11",
+    "nombre": "Kevin Magnussen",
+    "escuderia": "Haas",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "12",
+    "nombre": "Nico Hulkenberg",
+    "escuderia": "Haas",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": true
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": true,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "13",
+    "nombre": "Lando Norris",
+    "escuderia": "McLaren",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "14",
+    "nombre": "Oscar Piastri",
+    "escuderia": "McLaren",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:15:58",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:15:59",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:18:01",
+        "posicion": "11",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:15:01",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:02",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:16:03",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:07:03",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:18:04",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:21:06",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:16:06",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:22:07",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:20:07",
+        "posicion": "20",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:21:07",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:23:09",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:16:10",
+        "posicion": "19",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:21:10",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:15:10",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:20:11",
+        "posicion": "16",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:20:11",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:18:11",
+        "posicion": "12",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:17:12",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:10:12",
+        "posicion": "14",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:17:13",
+        "posicion": "17",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "15",
+    "nombre": "Lewis Hamilton",
+    "escuderia": "Mercedes",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:23:43",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:00:45",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:00:45",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:21:46",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:00:47",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:23:47",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:23:48",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:23:48",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇦 Pirelli Canada GP, Circuit Gilles-Villeneuve",
+        "tiempo": "00:23:49",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:23:49",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:50",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:21",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:58",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "16",
+    "nombre": "George Russell",
+    "escuderia": "Mercedes",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:20:01",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:20:02",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:03",
+        "posicion": "8",
+        "puntaje": 4,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:22:05",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:05",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:22:05",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:20:09",
+        "posicion": "13",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:22:10",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:10",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:10",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:19",
+        "posicion": "5",
+        "puntaje": 10,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "17",
+    "nombre": "Max Verstappen",
+    "escuderia": "Red Bull",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:20:01",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:20:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:03",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:22:05",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:20:09",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:22:10",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "2",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:19",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "18",
+    "nombre": "Checo Pérez",
+    "escuderia": "Red Bull",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:20:01",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "6",
+        "puntaje": 8,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:20:02",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:03",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:22:05",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:20:09",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:22:10",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "2",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:19",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "19",
+    "nombre": "Alex Albon",
+    "escuderia": "Williams",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:20:01",
+        "posicion": "7",
+        "puntaje": 6,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "9",
+        "puntaje": 2,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:20:02",
+        "posicion": "4",
+        "puntaje": 12,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:03",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:22:05",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:20:09",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:22:10",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "2",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:19",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  },
+  {
+    "idPiloto": "20",
+    "nombre": "Logan Sargeant",
+    "escuderia": "Williams",
+    "carreras": [
+      {
+        "circuito": "🇧🇭 Gulf Air Bahrain GP, Bahrain International Circuit",
+        "tiempo": "00:20:01",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇦 STC Saudi Arabian GP, Jeddah Street Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇺 Rolex Australian GP, Circuito Grand Prix Melbourne",
+        "tiempo": "00:20:02",
+        "posicion": "18",
+        "puntaje": 0,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇿 GP de Azerbaiyán, Baku City Circuit",
+        "tiempo": "00:22:02",
+        "posicion": "10",
+        "puntaje": 1,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Crypto.com Miami GP, Miami International Autodrome",
+        "tiempo": "00:22:03",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Emilia Romagna GP, Autodromo Enzo e Dino Ferrari",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇨 GP de Mónaco, Circuit de Monaco",
+        "tiempo": "00:22:05",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇪🇸 AWS Spanish GP, Circuit de Barcelona-Catalunya",
+        "tiempo": "00:22:05",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:20:09",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇦🇹 GP de Austria, Red Bull Ring",
+        "tiempo": "00:22:10",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇬🇧 Aramco British GP, Silverstone Circuit",
+        "tiempo": "00:23:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇹🇯 GP de Hungría, Hungaroring",
+        "tiempo": "00:22:10",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇪 GP de Bélgica, Circuit de Spa-Francorchamps",
+        "tiempo": "00:22:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇳🇱 Heineken Dutch GP, Circuit Park Zandvoort",
+        "tiempo": "00:21:11",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇮🇹 Pirelli Italian GP, Autodromo Nazionale Monza",
+        "tiempo": "00:21:12",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇸🇬 Singapore Airlines Singapore GP, Marina Bay Street Circuit",
+        "tiempo": "00:22:13",
+        "posicion": "1",
+        "puntaje": 25,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇯🇵 Lenovo Japanese GP, Suzuka International Racing Course",
+        "tiempo": "00:22:13",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇶🇦 Qatar GP, Losail International Circuit",
+        "tiempo": "00:22:16",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇺🇸 Lenovo United States GP, Circuit of the Americas",
+        "tiempo": "00:22:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇲🇽 Mexico GP, Autodromo Hermanos Rodriguez",
+        "tiempo": "00:23:18",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇧🇷 Rolex Brazil GP, Autodromo Jose Carlos Pace",
+        "tiempo": "00:21:18",
+        "posicion": "2",
+        "puntaje": 18,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🇨🇱 Heineken La Vega GP, La Vega Street Circuit",
+        "tiempo": "00:22:19",
+        "posicion": "2",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      },
+      {
+        "circuito": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Etihad Airways Londres GP, Yas Marina Circuit",
+        "tiempo": "00:21:19",
+        "posicion": "3",
+        "puntaje": 15,
+        "tecnicos": false,
+        "personales": false
+      }
+    ]
+  }
+]

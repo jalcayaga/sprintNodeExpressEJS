@@ -1,4 +1,4 @@
-<div class="col-3">
+<div class="col-4">
   <h4 class="text-white text-center">Ingresar Resultado</h4>
   <form
     method="POST"
@@ -28,12 +28,14 @@
       </select>
     </div>
     <div class="mb-3">
-      <label for="minutos">Minutos Totales:</label>
+      <label for="tiempo">Tiempo Total (HH:mm:ss):</label>
       <input
-        type="time"
-        name="minutos"
-        id="minutos"
+        type="text"
+        name="tiempo"
+        id="tiempo"
         class="form-control"
+        pattern="^([0-9]{2}):([0-5][0-9]):([0-5][0-9])$"
+        title="Por favor, introduzca un tiempo en formato HH:mm:ss"
         required
       />
     </div>

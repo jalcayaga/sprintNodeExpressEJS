@@ -1,14 +1,14 @@
 <!-- ------------------------- tabla de resultados -------------------------- -->
 
-<div class= "my-4">
-<div class="row">
-  <h4 class="text-white text-center">Tabla Clasificación F1 2023</h4>
-</div>
-<section id="tabla">
-  <table class=" table table-dark table-striped">
-      <thead class="text-success">       
+<div class="my-4">
+  <div class="row">
+    <h4 class="text-white text-center">Tabla Clasificación F1 2023</h4>
+  </div>
+  <section id="tabla">
+    <table class="table table-dark table-striped">
+      <thead class="text-success">
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">Posicion</th>
           <th scope="col">Piloto</th>
           <th scope="col">🇧🇭</th>
           <th scope="col">🇸🇦</th>
@@ -37,25 +37,24 @@
         </tr>
       </thead>
       <tbody>
-  <% for (let i = 0; i < resultados.length; i++) { %>
-    <tr>
-      <td class="text-warning"><%= resultados[i].idPiloto %></td>
-      <td><%= resultados[i].nombre %></td>
-      <!-- --------------- for anidado para recorrer las carreras ---------------- -->
-      <% let totalPuntos = 0; %>
-      <% for (let j = 0; j < resultados[i].carreras.length; j++) { %>
-        <% totalPuntos += resultados[i].carreras[j].puntaje; %>
-        <td><%= resultados[i].carreras[j].puntaje %></td>
-      <% } %>
-      <% for (let j = resultados[i].carreras.length; j < 23; j++) { %>
-        <td></td>
-      <% } %>
-      <td><%= totalPuntos %></td>
-    </tr>
-  <% } %>
-</tbody>
-
+        <% resultados.sort((a, b) => { const aTotalPuntos =
+        a.carreras.reduce((acc, curr) => acc + curr.puntaje, 0); const
+        bTotalPuntos = b.carreras.reduce((acc, curr) => acc + curr.puntaje, 0);
+        return bTotalPuntos - aTotalPuntos; }).forEach((piloto, index) => { %>
+        <tr>
+          <td class="text-warning"><%= index + 1 %></td>
+          <td><%= piloto.nombre %></td>
+          <% let totalPuntos = 0; %> <% for (let j = 0; j <
+          piloto.carreras.length; j++) { %> <% totalPuntos +=
+          piloto.carreras[j].puntaje; %>
+          <td><%= piloto.carreras[j].puntaje %></td>
+          <% } %> <% for (let j = piloto.carreras.length; j < 23; j++) { %>
+          <td></td>
+          <% } %>
+          <td><%= totalPuntos %></td>
+        </tr>
+        <% }) %>
+      </tbody>
     </table>
   </section>
 </div>
-

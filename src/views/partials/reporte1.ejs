@@ -1,4 +1,4 @@
-<div class="col">
+<div class="col-6 mt-3">
   <h4 class="text-white text-center">Ranking Escuderías 2023</h4>
   <table class="table table-sm table-dark">
     <thead class="text-success">
@@ -12,7 +12,7 @@
       <tbody>
         <% ranking.forEach((item) => { %>
           <tr>
-            <td><%= item.posicion %></td>
+            <td class="text-success"><%= item.posicion %></td>
             <td><img src="img/escuderia/<%= item.escuderia %>.png"></td>
             <td><%= item.escuderia %></td>
             <td><%= item.puntos %></td>
